@@ -1,0 +1,27 @@
+2000-01-01 00:00:18,vvvvv,All clear. Please proceed to the site
+2000-01-01 00:00:23,zzzzzz,All clear. Please proceed to the site
+2000-01-01 00:04:30,venesha,All clear. Please proceed to the site
+2000-01-01 00:00:20,Venesha,All clear. Please proceed to the site
+2000-01-01 00:00:31,rachel,All clear. Please proceed to the site
+2000-01-01 00:00:24,matt,MISSING GEAR: VEST. Please wear all required safety gear
+2000-01-01 00:01:03,matt,All clear. Please proceed to the site
+2000-01-01 00:00:27,bbbbb,All clear. Please proceed to the site
+2000-01-01 00:00:27,jjjj,MISSING GEAR: VEST. Please wear all required safety gear
+2000-01-01 00:00:23,cc,MISSING GEAR: VEST. Please wear all required safety gear
+2000-01-01 00:00:26,kk,All clear. Please proceed to the site
+2000-01-01 00:00:24,vv,MISSING GEAR: VEST. Please wear all required safety gear
+2000-01-01 00:00:42,check,MISSING GEAR: VEST. Please wear all required safety gear
+2000-01-01 00:00:25,check2,All clear. Please proceed to the site
+2000-01-01 00:00:28,qqqqq,MISSING GEAR: VEST. Please wear all required safety gear
+2000-01-01 00:00:29,check7,All clear. Please proceed to the site
+2000-01-01 00:00:45,CHECK1,All clear. Please proceed to the site
+2000-01-01 00:00:16,checking4,All clear. Please proceed to the site
+2000-01-01 00:00:39,checking5,MISSING GEAR: VEST. Please wear all required safety gear
+
+
+2000-01-01 00:00:30,prox_triggered_user,MISSING GEAR: VEST. Please wear all required safety gear.
+2000-01-01 00:00:46,checking,MISSING GEAR: VEST. Please wear all required safety gear.
+2000-01-01 00:01:08,prox_triggered_user,MISSING GEAR: VEST. Please wear all required safety gear.
+2000-01-01 00:01:25,check,MISSING GEAR: VEST. Please wear all required safety gear.
+2000-01-01 00:01:41,check,MISSING GEAR: VEST. Please wear all required safety gear.
+
