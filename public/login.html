@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        /* Styles for frontend of login page */
+        body {
+            background-color: #d0eaff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center; 
+        }
+
+        .settings-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ffffff;
+            color: #0077cc;
+            border: 1px solid #0077cc;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none; 
+            transition: all 0.2s;
+        }
+
+        .settings-button:hover {
+            background-color: #f0faff;
+            border-color: #005fa3;
+        }
+        .image-column {
+            flex: 1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .image-column img {
+            max-width: 90%; 
+            height: auto;
+            border-radius: 15px; 
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15); 
+        }
+        .login-column {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        h1 { 
+            font-size: 3em; 
+            font-weight: bold; 
+            color: #003366; 
+            text-align: center; 
+            margin-bottom: 10px;
+        }
+        h2 { 
+            text-align: center; 
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: normal;
+            color: #333;
+        }
+        .form-container { 
+            background-color: #ffffff; 
+            padding: 30px 60px; 
+            border-radius: 12px; 
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+            text-align: center; 
+            width: 100%;
+            max-width: 400px; 
+        }
+        label { 
+            font-size: 1.1em; 
+            display: block; 
+            margin-bottom: 10px; 
+        }
+        input[type="text"] { 
+            padding: 10px; 
+            width: 100%; 
+            font-size: 1em; 
+            margin-bottom: 20px; 
+            border-radius: 6px; 
+            border: 1px solid #ccc; 
+        }
+        input[type="submit"] { 
+            padding: 10px 25px; 
+            font-size: 1em; 
+            background-color: #0077cc; 
+            color: white; 
+            border: none; 
+            border-radius: 6px; 
+            cursor: pointer; 
+        }
+        input[type="submit"]:hover { 
+            background-color: #005fa3; 
+        }
+
+    </style>
+</head>
+<body>
+    <a href="/employer-login" class="settings-button">Employer Settings</a>
+    <div class="image-column">
+        <img src="/futuristic illustrat.png" alt="Futuristic Safety Gear Illustration">
+    </div>
+    <!-- Employee sign in page for them to get checked by Nicla Vision -->
+    <div class="login-column">
+        <h1>Welcome to SafeGear Check</h1>
+        <h2>Employee Sign-In</h2>
+        <form class="form-container" onsubmit="login(event)">
+            <label for="username">First and Last Name:</label>
+            <input type="text" id="username" name="username" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <script>
+        function login(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            localStorage.setItem('sga-username', username);
+            window.location.href = '/dashboard';
+        }
+    </script>
+</body>
+</html>

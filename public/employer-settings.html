@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employer Settings</title>
+    <style>
+        /* Styles for frontend of employer settings page */
+        body { background-color: #f0f8ff; font-family: Arial, sans-serif; margin: 0; height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .container { background-color: #ffffff; padding: 40px 60px; border-radius: 12px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); text-align: center; min-width: 450px;}
+        h1 { color: #003366; }
+        #gear-display {
+            margin-top: 20px;
+            text-align: center; 
+        }
+        
+        .gear-item {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #d9534f;
+            padding: 5px 0;
+        }
+        .default-message {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #616161;
+            text-align: center;
+        }
+        .default-message1 {
+            font-size: 1.5em;
+            color: #767676;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        if (sessionStorage.getItem('employerLoggedIn') !== 'true') {
+            alert('Access Denied: Please log in first.'); 
+            window.location.href = '/employer-login';
+        }
+    </script>
+
+<!-- Live updates from buttons pressed are displayed here -->
+    <div class="container">
+        <h1>Live Required Gear Status</h1>
+        <div id="gear-display">
+            <p class="default-message">Press the corresponding buttons to set Required Gear</p>
+            <p class="default-message1">Button 1: Helmet | Button 2: Vest | Button 3: Mask | Button 4: Gloves</p>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        const gearDisplay = document.getElementById('gear-display');
+        socket.on('gear-list-update', (listString) => {
+            gearDisplay.innerHTML = '';
+            if (listString === "") {
+                gearDisplay.innerHTML = '<p class="default-message">Press the corresponding buttons to set Required Gear</p>';
+                // login link if no gear is set
+                const link = document.createElement('a');
+                link.href = '/login.html';
+                link.textContent = 'Return to Employee Login Page';
+                link.style.display = 'block';
+                link.style.marginTop = '30px';
+                link.style.fontSize = '1.2em';
+                link.style.color = '#0077cc';
+                link.style.textDecoration = 'underline';
+                gearDisplay.appendChild(link);
+                return;
+            }
+            const items = listString.split(',');
+            items.forEach(item => {
+                const p = document.createElement('p');
+                p.className = 'gear-item';
+                p.textContent = `Required Gear set to '${item}'`;
+                gearDisplay.appendChild(p);
+            });
+            // login link at the end of the list
+            const link = document.createElement('a');
+            link.href = '/login.html';
+            link.textContent = 'Return to Login Page';
+            link.style.display = 'block';
+            link.style.display = 'center'
+            link.style.marginTop = '30px';
+            link.style.fontSize = '1.2em';
+            link.style.color = '#0077cc';
+            link.style.textDecoration = 'underline';
+            gearDisplay.appendChild(link);
+        });
+    </script>
+</body>
+</html>
