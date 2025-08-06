@@ -29,7 +29,7 @@ with Visual Studio Code to create a web dashboard for employers to set requireme
 ## Software Set Up 
 1) Firstly, clone the repository by running the following command `git clone [Arduino-Nicla-Vision_SafeGear-Check}`
 2) On the Visual Studio Code terminal, save all the VS Code files on VS Code, and run `npm init`, `npm install express`, and `npm install`.
-3) Plug in the Nicla Vision to your computer. Save the **main.py**, **trained.flight**, **labels.txt**, and **System_log.txt** to the Nicla Vision USB folder that should pop up in your File Explorer.
+3) Plug in the Nicla Vision to your computer. Save the **main.py**, **trained.tflite**, **labels.txt**, and **System_log.txt** to the Nicla Vision USB folder that should pop up in your File Explorer.
 4) Open **main.py** on OpenMV IDE. Under **Tools**, click on **Save open script to OpenMV Cam (as main.py)**. A red light should blink once on the Nicla Vision. Close OpenMV, unplug your Nicla Vision, and plug it back in.
 5) Open the Server.js and find the line that says `const portName = COM5;`. Change the COM5 to the correct COM port for your Nicla Vision on your computer.
 6) Run the server by running `node server.js` on your VS Code terminal.
