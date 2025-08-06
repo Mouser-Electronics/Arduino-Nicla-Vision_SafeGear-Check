@@ -1,4 +1,4 @@
-# SafeGear Check by Arduino Nicla Vision
+# SafeGear Check: An AI Powered Safety Gear Detector with Nicla Vision
 
 SafeGear Check is a smart object-recognition system powered by Arduino Nicla Vision. This system checks for safety gears like helmets, vests, masks, etc in real-time to verify the workers are well equipped with all the required safety gear to prevent workplace accidents.
 This is a system that enables employers to first choose and set the required gear that the employees will need to wear. From there, the Nicla Vision will use the trained Edge Impulse AI model designed for object recognition to then check for the gear
