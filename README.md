@@ -1,19 +1,13 @@
 # SafeGear Check: An AI Powered Safety Gear Detector with Nicla Vision
 
-SafeGear Check is a smart object-recognition system powered by Arduino Nicla Vision. This system checks for safety gears like helmets, vests, masks, etc in real-time to verify the workers are well equipped with all the required safety gear to prevent workplace accidents.
-This is a system that enables employers to first choose and set the required gear that the employees will need to wear. From there, the Nicla Vision will use the trained Edge Impulse AI model designed for object recognition to then check for the gear
-set by the employers. From there, the Nicla Vision will control the Adafruit Tower Light and Speaker as visual and voice feedback based on the detection results. All the results will be stored in a file for employers to review later. This system also has a web interface element
-with Visual Studio Code to create a web dashboard for employers to set requirements and a log in interface for workers. With SafeGear Check, let’s strive to ensure that all the workers are well equipped and protected before they enter hazardous environments and decrease the number of workplace accidents. 
-
-### An Article about SafeGear Check
-- Here is a link to an article about SafeGear Check. It contains the instructions on how to design this system, including building the circuit and writing the code. Refer to this article for any questions - mouser.com/[urlforarticle] 
+SafeGear Check is a safety-gear-detecting system that scans individuals as they enter a work area to ensure they are wearing the required personal protective equipment (PPE). The system employs the Arduino Nicla Vision artificial intelligence (AI) camera module and an AI model trained on Edge Impulse. The system includes lights and a speaker for visual and voice feedback based on the detection results.
+In this project, you will learn how to build the SafeGear Check system, including connecting the Nicla Vision outputs to a web interface to improve system efficiency. For more information, read the supplemental project article.
 
 ## Core Features
-  - Real Time AI Detection done by Nicla Vision
-  - Safety gear requirements can be set by the employer under "Employer Settings" by pressing push buttons on the circuit. This will update the Nicla Vision on what it has to check for.
-  - Interactive web dashboard for employers to set the required gear and employees to log in and get checked. Detection results will also be displayed here.
-  - Visual and voice feedback provided by the tower light and speaker controlled by the Nicla Vision based on what it detects.
-  - Automatically stores the worker login and their detection results for employer review.
+- Real-time AI detection by an Arduino Nicla Vision
+- An interactive web dashboard that allows employers to define the required PPE, enables employees to log in and initiate a PPE scan, and displays detection results
+- Visual and voice feedback controlled by the Nicla Vision based on detection results
+- Automatic storage of worker logins and their detection results for employer review
 
 ## Required Hardware
 - Arduino Nicla Vision
