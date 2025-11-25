@@ -1,7 +1,7 @@
 # SafeGear Check: An AI Powered Safety Gear Detector with Nicla Vision
 
 SafeGear Check is a safety-gear-detecting system that scans individuals as they enter a work area to ensure they are wearing the required personal protective equipment (PPE). The system employs the Arduino Nicla Vision artificial intelligence (AI) camera module and an AI model trained on Edge Impulse. The system includes lights and a speaker for visual and voice feedback based on the detection results.
-In this project, you will learn how to build the SafeGear Check system, including connecting the Nicla Vision outputs to a web interface to improve system efficiency. For more information, read the supplemental project article.
+In this project, you will learn how to build the SafeGear Check system, including connecting the Nicla Vision outputs to a web interface to improve system efficiency. For more information, read the [supplemental project article.](https://resources.mouser.com/hardware-projects/safegear-check-ppe-detection-nicla-vision)
 
 ## Core Features
 - Real-time AI detection by an Arduino Nicla Vision
